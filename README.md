@@ -9,4 +9,19 @@
 - Download guestbook-go example project `https://github.com/kubernetes/examples`
 - buat folder manifest
 - copy file *.json ke manifest
-- run `kubectl apply -f manifest`
+- run 
+    `kubectl apply -f manifest` untuk deploy guestbook app
+    `kubectl apply -f mytoko` untuk deploy mytoko app
+
+- list command :
+    ```
+    - kubectl get pods
+    - kubectl get services
+    - kubectl get ingress
+    ```
+
+- delete 
+    guestbook `kubectl delete replicationcontroller guestbook`
+    mytoko `kubectl delete deployment mytoko`
+
+

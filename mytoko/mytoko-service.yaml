@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: mytoko
+  labels:
+    app: mytoko
+spec:
+  ports:
+    - port: 8080
+      targetPort: http-server
+  selector:
+    app: mytoko
+  type: LoadBalancer
